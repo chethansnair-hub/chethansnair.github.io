@@ -10,6 +10,9 @@ body{
   h1 {
     font-size: 1.5rem; /* Smaller heading size on mobile devices */
   }
+  .Title {
+    font-size: 2rem; /* <-- ADDED: Scales the title down to fit comfortably on your OnePlus 7T */
+  }
 }
 .w3-animate-opacity{
     transition-delay: 2s;
