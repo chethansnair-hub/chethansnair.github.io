@@ -15,11 +15,18 @@ body{
 }
 @media (max-width: 600px) {
   h1 {
-    font-size: 1.5rem; /* Smaller heading size on mobile devices */
+    font-size: 1.5rem;
   }
   .Title {
-    font-size: 2rem; /* <-- ADDED: Scales the title down to fit comfortably on your OnePlus 7T */
+    font-size: 2rem; 
   }
+  .text {
+    font-size: 2rem; 
+  }
+  .Buttons{
+      font-size: 1.5rem;
+  }
+  
 }
 .w3-animate-opacity{
     transition-delay: 2s;
@@ -27,6 +34,7 @@ body{
 .small{
     font-size: 0.6em;
     font-weight: normal;
+     word-wrap: break-word; 
 }
 
 .Button{
@@ -38,6 +46,7 @@ body{
     justify-content: space-between;
     align-items: center;
     border: none;
+     word-wrap: break-word; 
     /*width: 100%;*/
 }
 .Buttons{
@@ -48,6 +57,7 @@ body{
     border: none;
     font-family: 'Courier New', Courier, monospace;
     font-size: x-large;
+     word-wrap: break-word; 
 }
 .Video{
     
@@ -75,6 +85,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-size: x-large;
     text-align: center;
+     word-wrap: break-word; 
 }
 .tab{
     display:inline-block;
@@ -145,6 +156,7 @@ body{
 }
 .padding{
     padding: 30px;
+     word-wrap: break-word; 
 }
 .Delay{
     animation-delay: 2s;
