@@ -1,0 +1,38 @@
+<head>
+    <link rel="stylesheet" href="myWebsite.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <title>Unity Block Project</title>
+</head>
+<body onload="typeWriter()">
+    <h1 class="Title" id="A"></h1>
+    <div>
+    <p class="w3-animate-opacity delay text">This was my first project using the Unity Engine. The purpose of this project <br>
+         was to experiment with machine learning, a method used to train Artificial Intelligence. <br>
+         Basically, the agent (blue cube) needs to hit the randomly positioned grey cube. Every time the agent touches the <br>
+         grey cube, it receives a reward. Over time, the agent will learn to touch the grey cube. <br>
+         If the agent falls off the platform, it receives a negative punishment. The entire concept of machine learning is <br>
+        learning from trial and error.
+        </p>
+    </div>
+    <div class="Video1">
+        <img src="Block.png" alt="A blue and grey block. The blue block is a Machine Learning Agent and the grey block is its target. " class="padding" style="width: 750px; height: 500px;">
+        <video src="Block.mp4" autoplay muted style="width: 800px; height: 600px;" class="padding"></video>
+    </div>
+    <p class="w3-animate-opacity delay text">This project was created for the purpose of presenting in my school science fair. It is safe to say it worked <br>
+    as I was one of three to be promoted to district. Below is a chart showing the number of times the agent touches the target at specific time points.</p>
+    <img src="Stats.png" alt="A line graph titled Hits vs. Time tracking the growth of hits over a 2-hour period, divided into 10-minute intervals. The y-axis ranges from 0 to 800 hits, and the x-axis displays time. The data shows an exponential-like growth curve: 10 min to 40 min: Hits start near 0 and rise very slowly, staying under 25. 50 min to 1 hour: Hits rise slightly from around 30 to roughly 70. 1 hr 10 min to 1 hr 30 min: Growth begins to accelerate, moving from about 80 hits to 220 hits. 1 hr 40 min to 1 hr 50 min: The curve continues upward, reaching approximately 340 hits and then 410 hits. 2 hours: A sharp final spike brings the total to approximately 650 hits." class="padding">
+    
+</body>
+<script>
+    var i = 0;
+    var txt = 'Unity Reinforced Learning Block Project'; /* The text */
+    var speed = 70; /* The speed/duration of the effect in milliseconds */
+
+    function typeWriter() {
+    if (i < txt.length) {
+        document.getElementById("A").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+    }
+</script>
