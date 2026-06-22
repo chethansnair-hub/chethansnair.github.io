@@ -180,7 +180,7 @@ a{
 }
 .flex{
     display: flex !important;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
 }
 .Button3{
