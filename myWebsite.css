@@ -180,6 +180,11 @@ a{
 }
 .flex{
     display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.flex1{
+    display: flex !important;
     flex-direction: row;
     justify-content: space-between;
 }
